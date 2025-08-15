@@ -629,7 +629,7 @@ body {
 }
 
 .map-section {
-    position: relative;
+    position: absolute;
     top: 13%;
     left: 25%;
     animation: map 2s;
@@ -673,6 +673,13 @@ body {
     color: white;
     position: absolute;
 }
+
+
+
+
+
+
+
 
 
 @keyframes a1 {
@@ -750,3 +757,46 @@ body {
     font-size: 1.2rem;
 }
 
+
+
+@media screen and (max-width: 576px) {
+
+    .end-info {
+    height: 150vh;     
+}
+
+.logo-social {
+    top: 10%;
+    left: 30% !important;
+}
+
+
+.map-section {  
+    top: 30% !important;
+    left: 0% !important;
+}
+
+.map-section p{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+}
+
+.fcdsmap {
+    border-radius: 10%;
+    transform: scale(0.7);
+    width: 350px !important;
+    height: 300px !important;
+}
+
+
+.links {
+    top: 72% !important;
+    left: 7% !important;
+    width: 100%;
+}
+
+
+
+
+}
