@@ -762,7 +762,7 @@ body {
 @media screen and (max-width: 576px) {
 
     .end-info {
-    height: 150vh;     
+    height: 100vh;     
 }
 
 .logo-social {
@@ -773,7 +773,7 @@ body {
 
 .map-section {  
     top: 30% !important;
-    left: 0% !important;
+    left: 10% !important;
 }
 
 .map-section p{
@@ -795,8 +795,5 @@ body {
     left: 7% !important;
     width: 100%;
 }
-
-
-
 
 }

@@ -151,6 +151,7 @@ body {
 
 .navbar-nav li a {
     text-align: center;
+    
 }
 
 .nav-item:hover {
@@ -333,9 +334,9 @@ body {
 }
 
 .allw::-webkit-scrollbar{
-    width: 0.8vw;       /*vertical scrollbar*/
+    width: 0.8vw;     
     min-width: 9px;
-    height: 0.8vh;      /*horizontal scrollbar*/
+    height: 0.8vh;    
     min-height: 9px;
 }
 
@@ -346,7 +347,7 @@ body {
 .allw::-webkit-scrollbar-thumb {
     background-color: #a12c30b2;
     border-radius: 30%;
-    border: 3px solid rgba(97, 95, 95, 0.151); /*padding around thumb*/
+    border: 3px solid rgba(97, 95, 95, 0.151); 
 } 
 
 .allw::-webkit-scrollbar-thumb:hover {
@@ -569,33 +570,17 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 
 .end-info {
     height: 70vh;
-    max-width: 1400px;       /* keeps it from being too wide */
-    margin: 0 auto;          /* center it horizontally */
-    position: relative;      /* positioning context */
+    max-width: 1400px;      
+    margin: 0 auto;    
+    position: relative;     
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;         /* wrap content if it’s tight */
+    flex-wrap: wrap;        
 }
 
 .logo-social {
@@ -670,8 +655,7 @@ body {
 .end h5 {
     color: white;
     position: absolute;
-    /* top: 30%;
-    right: 50%; */
+
 }
 
 /*Links*/
@@ -718,4 +702,44 @@ body {
 
 .int-students-main-section-ar li a:hover {
     font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .end-info {
+    height: 90vh;     
+}
+
+.logo-social {
+    top: 10%;
+    right: 40% !important;
+}
+
+
+.map-section {  
+    top: 30% !important;
+    left: 10% !important;
+}
+
+.map-section p{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+}
+
+.fcdsmap {
+    border-radius: 10%;
+    transform: scale(0.7);
+    width: 350px !important;
+    height: 300px !important;
+}
+
+
+.links {
+    top: 72% !important;
+    right: 7% !important;
+    width: 100%;
+}
+
 }
