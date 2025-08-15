@@ -153,6 +153,7 @@ body {
 .navbar-nav li a {
     text-align: center;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-item:hover {
@@ -263,7 +264,6 @@ body {
     background-color: #a12c30b2;
     border-radius: 30%;
     border: 3px solid rgba(97, 95, 95, 0.151);
-    /*padding around thumb*/
 }
 
 .allw::-webkit-scrollbar-thumb:hover {
@@ -587,32 +587,17 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 
 .end-info {
     height: 70vh;
-    max-width: 1400px;       /* keeps it from being too wide */
-    margin: 0 auto;          /* center it horizontally */
-    position: relative;      /* positioning context */
+    max-width: 1400px;       
+    margin: 0 auto;          
+    position: relative;     
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;         /* wrap content if it’s tight */
+    flex-wrap: wrap;       
 }
 
 .logo-social {
