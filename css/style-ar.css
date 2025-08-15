@@ -708,7 +708,7 @@ body {
 @media screen and (max-width: 576px) {
 
     .end-info {
-    height: 90vh;     
+    height: 95vh;     
 }
 
 .logo-social {
@@ -737,7 +737,7 @@ body {
 
 
 .links {
-    top: 72% !important;
+    top: 78% !important;
     right: 7% !important;
     width: 100%;
 }
