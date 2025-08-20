@@ -912,10 +912,26 @@ body {
 
 
 }
-/* Media query*/
+
+/* ====== Footer Responsive ====== */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+  margin: 15px;
+}
+
+/* Media Query*/
 @media (max-width: 768px) {
   .footer {
-    padding: 20px 10px;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -928,8 +944,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-
-  .social-links {
-    justify-content: center;
-  }
 }
+
+
