@@ -910,4 +910,26 @@ body {
 
     }
 
+
+}
+/* Media query*/
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-col h4::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
 }
