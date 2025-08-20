@@ -80,9 +80,6 @@ body {
 }
 
 
-
-
-
 .navbar::after {
     content: "";
     position: absolute;
@@ -96,10 +93,26 @@ body {
     pointer-events: none;
 }
 
+.navbar .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    display: block !important;
+}
+
 .navbar .dropdown-menu:not(.dropdown-submenu .dropdown-menu) {
     left: 50% !important;
     transform: translateX(-50%) !important;
     right: auto !important;
+}
+
+
+
+
+
+.navbar .navbar-collapse {
+    justify-content: center;
 }
 
 .dropdown-menu::after {
@@ -140,35 +153,53 @@ body {
 
 .nav-item {
     text-transform: capitalize;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 30px;
     padding: 4px;
     font-family: cursive;
     font-size: 0.9rem;
     font-weight: bold;
-    transition: transform 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+    border-bottom: 7px solid transparent;
+    background-color: transparent;
+    border-radius: 10%;
+    transition:
+    transform 0.3s ease,
+    border-bottom-color 0.3s ease,
+    background-color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .navbar-nav li a {
     text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 .nav-item:hover {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
-    border-bottom: 7px solid #02aed6;
+    border-bottom-color: #02aed6;
     transform: scale(1.1);
+    background-color: #02aed6;
 }
 
 
 .nav-item.dropdown:hover>.dropdown-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .dropdown-submenu {
     position: relative;
+
 }
+
 
 .dropdown-submenu>.dropdown-menu {
     top: 0;
@@ -176,11 +207,17 @@ body {
     margin-top: 0;
     margin-left: 0.1rem;
     position: absolute;
-    display: none !important;
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
 .dropdown-submenu:hover>.dropdown-menu {
-    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .dropdown-submenu.open-left>.dropdown-menu {
@@ -190,24 +227,6 @@ body {
     margin-right: 0.1rem;
 }
 
-@media (max-width: 576px) {
-    .dropdown-menu {
-        overflow: visible !important;
-        position: relative !important;
-    }
-
-    .dropdown-submenu > .dropdown-menu {
-        position: relative !important; 
-        left: 0 !important;
-        top: 0 !important;
-        margin-left: 0 !important;
-        display: block !important;
-        z-index: 1050;
-    }
-
-    
-}
-
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .dropdown-menu {
@@ -215,8 +234,8 @@ body {
         position: relative !important;
     }
 
-    .dropdown-submenu > .dropdown-menu {
-        position: relative !important; 
+    .dropdown-submenu>.dropdown-menu {
+        position: relative !important;
         left: 0 !important;
         top: 0 !important;
         margin-left: 0 !important;
@@ -231,8 +250,8 @@ body {
         position: relative !important;
     }
 
-    .dropdown-submenu > .dropdown-menu {
-        position: relative !important; 
+    .dropdown-submenu>.dropdown-menu {
+        position: relative !important;
         left: 0 !important;
         top: 0 !important;
         margin-left: 0 !important;
@@ -240,6 +259,7 @@ body {
         z-index: 1050;
     }
 }
+
 
 
 
@@ -260,7 +280,6 @@ body {
     background-color: #a12c30b2;
     border-radius: 30%;
     border: 3px solid rgba(97, 95, 95, 0.151);
-    /*padding around thumb*/
 }
 
 .allw::-webkit-scrollbar-thumb:hover {
@@ -276,6 +295,7 @@ body {
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 5px rgb(255, 255, 255);
     cursor: default;
 }
+
 
 
 /* --------------------------------------------------------------- */
@@ -750,4 +770,5 @@ body {
 .caption a {
     color: red;
     text-decoration: none;
+
 }
