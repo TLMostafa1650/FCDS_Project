@@ -315,4 +315,88 @@
     width: 95%;
 }
 
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .end{
+        position: relative;
+        height: 400px;
+    }
+    .team{
+        position: absolute;
+        width: 40%;
+        left: 7%;
+    }
+    .info1{
+        position: absolute;
+        width: 40%;
+        left: 55%;
+        
+
+    }
+    
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .end{
+         position: relative;
+        height: 400px;
+    }
+    .team{
+        position: absolute;
+        width: 40%;
+        left: 7%;
+    }
+    .info1{
+        position: absolute;
+        width: 40%;
+        left: 55%;
+
+    }
+    
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .end{
+        position: relative;
+        height: 400px;
+    }
+    .team{
+        position: absolute;
+        width: 40%;
+        left: 7%;
+    }
+    .info1{
+        position: absolute;
+        width: 40%;
+        left: 55%;
+        
+
+    }
+    
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .end{
+        width: 100%;
+        position: relative;
+        height: 400px;
+    }
+    .team{
+        position: absolute;
+        width: 40%;
+        left: 7%;
+    }
+    .info1{
+        position: absolute;
+        width: 40%;
+        left: 55%;
+        
+
+    }
+    
 }
