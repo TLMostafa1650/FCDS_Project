@@ -11,7 +11,6 @@ body {
     font-weight: 500;
     font-style: normal;
     background-image: url(../Media/IMGS/Header1.jpg);
-    backdrop-filter: blur(3px);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -42,6 +41,28 @@ body {
 }
 
 
+
+.up{
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(148, 2, 2));
+    position: fixed !important;
+    bottom: 5%;
+    left: 2%;
+    z-index: 9999;
+}
+
+
+.up i{
+    margin: 15px;
+    padding: 15px 15px;
+    color: whitesmoke;
+    transform: scale(2);
+}
+
+.up i:hover{
+    color: #02aed6;
+}
 
 .contact a {
     text-decoration: none;
