@@ -170,7 +170,7 @@ body {
 }
 
 .navbar-brand img {
-    width: 300px;
+    width: 200px;
     justify-content: center;
     animation: imgf 2s;
 }
@@ -790,6 +790,7 @@ body {
 }
 
 .end {
+    margin-top:5%;
     height: 340px;
     background-color: rgba(0, 0, 0, 0.418);
 }
@@ -800,7 +801,7 @@ body {
     right: 60%;
     background: linear-gradient(to bottom, rgba(8, 8, 8, 0.119), rgba(75, 34, 34, 0.475), rgba(148, 2, 2, 0.374));
     border-radius: 10%;
-    width: 15%;
+    width: 20%;
     height: 75%;
 }
 
@@ -817,7 +818,7 @@ body {
     left: 55%;
     background: linear-gradient(to bottom, rgba(8, 8, 8, 0.119), rgba(75, 34, 34, 0.475), rgba(148, 2, 2, 0.374));
     border-radius: 10%;
-    width: 15%;
+    width: 20%;
     height: 75%;
 }
 
@@ -927,4 +928,7 @@ body {
 
     }
 
+
 }
+
+
