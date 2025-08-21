@@ -354,6 +354,7 @@ body {
     min-height: 100%;
     object-fit: contain;
     background-color: transparent;
+    filter: brightness(70%) contrast(110%);
 }
 
 .carousel-caption {
@@ -459,16 +460,14 @@ body {
     border-width: 10px;
 }
 
+
 .dean-txt {
     padding: 5.5%;
     object-fit: inherit;
 }
 
-.dean-txt .wishes {
-    font-family: 'Dancing Script';
-}
-
 .dean-img-title {
+    background-color: #00000096;
     margin-bottom: 10%;
     height: 60px;
 }
@@ -532,7 +531,7 @@ body {
 .dean-sec .arrow-badge::before {
     content: "";
     position: absolute;
-    left: 60px;
+    left: 98%;
     top: 0%;
     width: 0;
     height: 0;
@@ -576,10 +575,10 @@ body {
     content: "";
     position: absolute;
     top: 0%;
-    left: 12.5%;
+    left: 5%;
     background: linear-gradient(to bottom, rgba(8, 8, 8, 0.119), rgba(75, 34, 34, 0.475), rgba(148, 2, 2, 0.374));
     height: 100%;
-    width: 75%;
+    width: 90%;
     border-radius: 9%;
     transition: top 0.3s ease;
 }
@@ -694,6 +693,7 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* --------------------------------------------------------------------------------------------------------- */
 
 /* Footer */
 
